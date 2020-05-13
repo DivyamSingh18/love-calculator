@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Love calculator</title>
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="background-image: url(bac.jpg);background-position: center;background-size: 100%;">
+<div class="container" style="background-color: none;"> 
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-10" style="background-color: hotpink; margin-top: 40px;border-top: 10px ridge purple; border-bottom: 10px ridge purple;border-right: 10px ridge red;border-left: 10px ridge red;  ">
+    
+      <h1 style="text-align: center; text-shadow: 4px 4px 10px red;color: white;">Love Calculator</h1>
+      <center>
+      	<div class="row">
+      		<div class="col" style="margin-top: 100px;"> 
+     			 <input type="text" name="name" placeholder="your name" style="box-shadow: -3px -3px 15px red;border:none;border-radius:20px; font-size: 20px; text-align: center;"><br> 
+     			 <select style="width: 150px; box-shadow: -3px 0px 15px red; background-color: hotpink; border:none; margin: 50px;color: white; font-weight: bold;font-size: 25px;">
+     			 	<option>Male</option>
+     			 	<option>Female</option>
+     			 </select>
+     			</div>
+      		<div class="col"> 
+    			  <img src="heart.gif">	
+      		</div>
+      		<div class="col" style="margin-top: 100px;">
+      			 <input type="text" name="name" placeholder="your partner/Crush" style="box-shadow: 3px -3px 15px red;border:none;border-radius:20px;font-size: 20px;text-align: center;"><br>
+      			  <select placeholder="Gender" style="width: 150px; box-shadow: 3px 0px 15px red; background-color: hotpink; border:none; margin: 50px;color: white; font-weight: bold;font-size: 25px;">
+     			 	<option>Male</option>
+     			 	<option>Female</option>
+     			 </select>
+      		</div>
+      	 </div><br>
+      	 <div class="row">
+      	 	<div class="col"></div>
+      	 	<div class="col-10" ><button style="border-radius:50px; font-size: 40px;padding: 6px 50px;color: purple; text-shadow: 2px 2px 3px hotpink;" onclick="cal()" >Calculate </button>
+      	 		<br>
+      	 		<h2 style="text-shadow: 2px 2px 6px red;">The Love Percentage is</h2>
+      	 		<h1 id="demo" style="color: red; text-shadow: 0 0 3px grey;font-size: 340%;">???</h1>
+
+      	 	<script type="text/javascript">
+      	 		function cal()
+      	 		{
+      	 			document.getElementById("demo").innerHTML =
+						Math.floor(Math.random() * 101) +"%";
+				}
+      	 	</script>	
+
+      	 	</div>
+      	 	<div class="col"></div>
+      	 </div>
+      </center>	
+   
+    
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
